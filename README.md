@@ -42,5 +42,5 @@ docker-compose up --build
  • http://localhost:5000
 
 Notes
- • You must configure your SQL Server to allow remote connections.
- • The backend connects to your host machine using its local IP (e.g., 192.168.x.x).
+ - You must configure your SQL Server to allow remote connections.
+ - The backend connects to your host machine using its local IP (e.g., 192.168.x.x).
