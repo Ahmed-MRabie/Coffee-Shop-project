@@ -11,16 +11,25 @@ This is a simple Coffee Shop Management application built using Python Flask for
 - Dockerized for easier deployment
 
 ## Project Structure
+```
 backend/
 │
-├── app.py                    # Flask main app
+├── app.py                   # Flask main app
 ├── CoffeeShop_class.py      # Business logic
 ├── Pagination_class.py      # Pagination helper
 ├── requirements.txt         # Python dependencies
 └── Dockerfile               # Backend Docker image setup
 
-docker-compose.yaml          # Compose backend service
+frontend/
+│
+├── htme/                    # HTML tempaltes
+│   ├── home.html
+│   ├── layout.html
+│   └── …
+└── Dockerfile               # Frontend Docker image setup
 
+docker-compose.yaml          # Compose backend service
+```
 ## How to Run
 
 1. Make sure your SQL Server is running and accessible from the Docker container.
@@ -28,7 +37,7 @@ docker-compose.yaml          # Compose backend service
 3. Run the app using Docker Compose:
 ```bash
 docker-compose up --build
-
+```
 4. Access the app via browser:
  • http://localhost:5000
 
