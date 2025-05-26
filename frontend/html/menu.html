@@ -1,0 +1,56 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<h2>Menu Management</h2>
+
+<div class="mb-3">
+    <a href="{{ url_for('view_menu_paginated', page=1) }}" class="btn btn-primary">View Menu (Paginated)</a>
+</div>
+
+<h4>Add Item</h4>
+<form action="{{ url_for('add_menu_item') }}" method="POST" class="mb-4">
+    <div class="mb-2">
+        <input type="text" name="name" placeholder="Item Name" class="form-control" required>
+    </div>
+    <div class="mb-2">
+        <input type="number" name="price" placeholder="Price" step="0.01" class="form-control" required>
+    </div>
+    <div class="mb-2">
+        <select name="type" class="form-select" required>
+            <option value="">Select Type</option>
+            <option value="Food">Food</option>
+            <option value="Drink">Drink</option>
+        </select>
+    </div>
+    <button type="submit" class="btn btn-success">Add Item</button>
+</form>
+
+<h4>Edit Item Price</h4>
+<form action="{{ url_for('edit_item') }}" method="POST" class="mb-4">
+    <div class="mb-2">
+        <input type="number" name="id" placeholder="Item ID" class="form-control" required>
+    </div>
+    <div class="mb-2">
+        <input type="number" name="price" placeholder="New Price" step="0.01" class="form-control" required>
+    </div>
+    <button type="submit" class="btn btn-warning">Edit Price</button>
+</form>
+
+<h4>Delete Item</h4>
+<form action="{{ url_for('delete_item') }}" method="POST" class="mb-4">
+    <div class="mb-2">
+        <input type="number" name="id" placeholder="Item ID" class="form-control" required>
+    </div>
+    <button type="submit" class="btn btn-danger">Delete Item</button>
+</form>
+
+<h4>Filters</h4>
+<div class="mb-4">
+    <a href="{{ url_for('cheapest_items') }}" class="btn btn-outline-secondary">Cheapest Items</a>
+    <a href="{{ url_for('food_items') }}" class="btn btn-outline-secondary">Food Only</a>
+    <a href="{{ url_for('drink_items') }}" class="btn btn-outline-secondary">Drink Only</a>
+</div>
+
+<a href="{{ url_for('home') }}" class="btn btn-dark">⬅ Back to Home</a>
+
+{% endblock %}

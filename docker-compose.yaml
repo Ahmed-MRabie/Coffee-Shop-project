@@ -1,0 +1,31 @@
+version: "3.9"
+
+services:
+  backend:
+    build: ./backend
+    container_name: backend
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./frontend/html:/app/templates
+    environment:
+      - DB_SERVER=192.168.199.1
+      - DB_NAME=CoffeeShop_db
+      - DB_USER=coffee_admin123
+      - DB_PASSWORD=123
+    networks:
+      - app_network
+
+  frontend:
+    build: ./frontend
+    container_name: frontend
+    ports:
+      - "80:80"
+    networks:
+      - app_network
+    depends_on:
+      - backend
+
+networks:
+  app_network:
+    driver: bridge

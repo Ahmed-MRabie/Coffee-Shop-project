@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+{% block content %}
+    <h2>Orders Management</h2>
+    <form action="/orders/add" method="post">
+        <input type="text" name="item" placeholder="Item Name" required>
+        <button type="submit" class="btn btn-primary">Add Order</button>
+    </form>
+    <br>
+    <a href="/orders/fulfill" class="btn btn-danger">Fulfill Order</a>
+    <a href="/orders/list" class="btn btn-success">List Orders</a>
+    <a href="/orders/total" class="btn btn-success">Total Due</a>
+    <br><br>
+
+    <a href="/" class="btn btn-dark">⬅ Back to Home</a>
+    
+{% endblock %}

@@ -1,0 +1,51 @@
+id,name,price,type
+1,Burger,2.71,food
+2,Pizza,4.08,food
+3,Fries,7.64,food
+4,Salad,4.65,food
+5,Sandwich,8.67,food
+6,Cola,8.4,drink
+7,Juice,8.71,drink
+8,Water,6.68,drink
+9,Coffee,7.89,drink
+10,Tea,8.15,drink
+11,Espresso,2.2,drink
+12,Cappuccino,4.76,drink
+13,Latte,9.3,drink
+14,Americano,9.55,drink
+15,Mocha,5.49,drink
+16,Iced Tea,2.23,drink
+17,Lemonade,6.41,drink
+18,Milkshake,7.63,drink
+19,Smoothie,4.03,drink
+20,Hot Chocolate,1.94,drink
+21,Taco,5.61,food
+22,Burrito,8.36,food
+23,Quesadilla,7.17,food
+24,Nachos,2.69,food
+25,Hot Dog,1.28,food
+26,Wrap,2.68,food
+27,Donut,4.22,food
+28,Croissant,8.17,food
+29,Bagel,5.18,food
+30,Soup,8.82,food
+31,Pasta,9.13,food
+32,Spaghetti,4.42,food
+33,Lasagna,8.21,food
+34,Risotto,7.74,food
+35,Steak,8.43,food
+36,Grilled Chicken,7.33,food
+37,Falafel,7.13,food
+38,Shawarma,3.67,food
+39,Hummus,6.57,food
+40,Kebab,9.5,food
+41,Waffle,7.14,food
+42,Pancake,5.12,food
+43,Omelette,5.33,food
+44,Toast,5.37,food
+45,Muffin,1.57,food
+46,Brownie,1.56,food
+47,Cupcake,7.58,food
+48,Soda,6.72,drink
+49,Energy Drink,7.64,drink
+50,Herbal Tea,8.99,drink
